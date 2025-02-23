@@ -1,5 +1,5 @@
 const db = require("../config/db.json");
-const Estudiante = require("./estudiante.model");
+const Estudiante = require("./student.model");
 
 const syncDB = async () => {
     try {
