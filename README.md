@@ -11,7 +11,7 @@ Esta API permite gestionar el registro de estudiantes en el Sistema de Gestión 
 
 ## 📂 Estructura del Proyecto
 ```
-odontologia-api/
+utm-web-service-student/
 │-- db.json               # Base de datos simulada
 │-- server.js             # Servidor JSON con autenticación
 │-- routes.json           # Reglas de autorización
@@ -25,8 +25,8 @@ odontologia-api/
 
 ### 1️⃣ Clonar el repositorio
 ```sh
-git clone <URL_DEL_REPOSITORIO>
-cd odontologia-api
+git clone https://github.com/richard6veliz/utm-web-service-student
+cd utm-web-service-student
 ```
 
 ### 2️⃣ Instalar dependencias
@@ -39,7 +39,7 @@ npm install
 npm run dev
 ```
 
-El servidor correrá en `http://localhost:5000`.
+El servidor correrá en `http://localhost:3000`.
 
 ---
 
@@ -48,7 +48,7 @@ El servidor correrá en `http://localhost:5000`.
 ### 🔑 Autenticación
 #### Registrar un usuario
 ```http
-POST /usuarios
+POST /users
 ```
 ```json
 {
@@ -64,7 +64,7 @@ POST /login
 ```
 ```json
 {
-  "username": "admin",
+  "username": "admin@utm.edu.ec",
   "password": "admin123"
 }
 ```
@@ -75,7 +75,7 @@ POST /login
 ### 🏫 Estudiantes
 #### Obtener todos los estudiantes (requiere autenticación)
 ```http
-GET /estudiantes
+GET /students
 ```
 
 #### Obtener un estudiante por ID
@@ -85,7 +85,7 @@ GET /estudiantes/{id}
 
 #### Crear un estudiante
 ```http
-POST /estudiantes
+POST /students
 ```
 ```json
 {
@@ -102,12 +102,12 @@ POST /estudiantes
 
 #### Actualizar un estudiante
 ```http
-PUT /estudiantes/{id}
+PUT /students/{id}
 ```
 
 #### Eliminar un estudiante
 ```http
-DELETE /estudiantes/{id}
+DELETE /students/{id}
 ```
 
 ---
@@ -136,11 +136,6 @@ Las reglas de acceso están definidas en `routes.json`:
 
 ---
 
-## 📢 Contribuciones
-¡Las contribuciones son bienvenidas! Si encuentras algún error o tienes sugerencias, abre un issue o envía un pull request.
-
----
-
 ## 📜 Licencia
-Este proyecto está bajo la licencia MIT.
+Este proyecto está bajo la licencia MIT @richard.veliz.
 
