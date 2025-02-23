@@ -1,0 +1,41 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "tipoDocumento": "Cédula",
+      "numeroDocumento": "1234567890",
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "nacionalidad": "Ecuador",
+      "fechaNacimiento": "2000-01-15",
+      "genero": "Masculino",
+      "estadoCivil": "Soltero",
+      "discapacidad": {
+        "tieneDiscapacidad": true,
+        "tipo": "Visual",
+        "porcentaje": 40,
+        "fechaAdquisicion": "2015-06-10"
+      }
+    },
+    {
+      "id": 2,
+      "nombre": "Juan Pérezzzz",
+      "edad": 21,
+      "carrera": "Ingeniería de Software"
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@utm.edu.ec",
+      "password": "$2a$10$wySKa6nf0.SHQR9iyZEUCOFKsmoKoVE8rWTecliBzcYDXuKExple2",
+      "id": 1,
+      "role": "admin"
+    },
+    {
+      "email": "estudiante@utm.edu.ec",
+      "password": "$2a$10$yUMS2h9k6uc1hwhHnV8XEekjb4myRnx9zlg9nq6QOku.QCDVFA4wm",
+      "id": 2,
+      "role": "student"
+    }
+  ]
+}
